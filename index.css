@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(226, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+.cards-wrapper {
+  max-width: 800px;
+  min-height: 400px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+.card {
+  background: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.row-span {
+  grid-row: span 2 / span 2;
+  background: hsl(246, 80%, 60%);
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+/*försökte lägga en vit  border på profile image */
+.profile-img img {
+  border: 1px;
+  border-radius: 50%;
+  border: solid 4px white;
+}
+.title {
+  color: rgba(255, 255, 255, 0.741);
+  padding: 0px 30px;
+  font-size: 12px;
+}
+.name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  padding: 0px 30px;
+  padding-bottom: 80px;
+}
+.dates {
+  width: 100%;
+  height: 32.7%;
+  background: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dates-text {
+  font-family: "Rubik", sans-serif;
+  color: rgba(255, 255, 255, 0.741);
+  padding: 30px 30px;
+  font-size: 14px;
+  flex-basis: 50%;
+}
