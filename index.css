@@ -3,7 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
   background: hsl(226, 43%, 10%);
   display: flex;
@@ -11,9 +10,10 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 15px;
+  font-family: "Rubik", sans-serif;
 }
 .cards-wrapper {
-  max-width: 800px;
+  max-width: 850px;
   min-height: 400px;
   flex: 1;
   display: grid;
@@ -33,8 +33,9 @@ body {
   width: 100px;
   height: 100px;
   padding: 20px;
+  margin-left: 10px;
 }
-/*försökte lägga en vit  border på profile image */
+
 .profile-img img {
   border: 1px;
   border-radius: 50%;
@@ -46,27 +47,117 @@ body {
   font-size: 12px;
 }
 .name {
-  font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 30px;
   color: white;
   padding: 0px 30px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 .dates {
   width: 100%;
-  height: 32.7%;
+  height: 38%;
   background: hsl(235, 46%, 20%);
   border-radius: 10px;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.741);
+  padding: 0px 118px 0px 30px;
+  line-height: 50px;
+  font-size: 14px;
+}
+#day,
+#week,
+#month {
+  cursor: pointer;
+  background: hsl(235, 46%, 20%);
+  color: rgba(255, 255, 255, 0.741);
+  border: solid 1px hsl(235, 46%, 20%);
+}
+.work-card {
+  background: hsl(15, 100%, 70%);
+  border-radius: 10px;
+}
+.work-icon,
+.play-icon,
+.study-icon {
+  height: 65px;
+  float: right;
+  margin-right: 15px;
+}
+.info {
+  background: hsl(235, 46%, 20%);
+  width: 100%;
+  height: 78%;
+  margin-top: 45px;
+  border-radius: 10px;
+  position: relative;
+  padding: 12px;
 }
 
-.dates-text {
-  font-family: "Rubik", sans-serif;
+.card {
+  border-radius: 10px;
+}
+
+.play-card {
+  background: hsl(195, 74%, 62%);
+}
+.study-card {
+  background: hsl(348, 100%, 68%);
+}
+.exercise-card {
+  background: hsl(145, 58%, 55%);
+}
+.social-card {
+  background: hsl(264, 64%, 52%);
+}
+.self-care-card {
+  background: hsl(43, 84%, 65%);
+}
+
+.exercise-icon {
+  height: 45px;
+  width: 70px;
+  float: right;
+  margin-right: 15px;
+}
+
+.social-icon {
+  height: 45px;
+  zoom: 200%;
+  float: right;
+  margin-right: 5px;
+}
+.self-care-icon {
+  height: 45px;
+  float: right;
+  margin-right: 15px;
+}
+.categorie {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.dots {
+  width: 15px;
+  cursor: pointer;
+}
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.hours {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+.last-time {
   color: rgba(255, 255, 255, 0.741);
-  padding: 30px 30px;
-  font-size: 14px;
-  flex-basis: 50%;
+  font-size: 12px;
+  font-weight: 300;
+}
+@media screen and (max-width: 375px) {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

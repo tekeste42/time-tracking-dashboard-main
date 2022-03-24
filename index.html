@@ -11,26 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Time tracking dashboard</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="cards-wrapper">
@@ -38,14 +26,79 @@
         <img class="profile-img" src="images/image-jeremy.png" alt="" />
         <p class="title">Report for</p>
         <p class="name">Jeremy Robson</p>
-        <div class="dates"><p class="dates-text">Daily Weekly Monthly</p></div>
+        <div class="dates">
+          <button id="day">Daily</button>
+          <button id="week">Weekly</button>
+          <button id="month">Monthly</button>
+        </div>
       </div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="work-card card">
+        <img class="work-icon" src="./images/icon-work.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Work</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="work-hours">32hrs</p>
+          <p class="last-time" id="work-last-time">Last week - 36hrs</p>
+        </div>
+      </div>
+      <div class="play-card card">
+        <img class="play-icon" src="./images/icon-play.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Play</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="play-hours">10hrs</p>
+          <p class="last-time" id="play-last-time">Last week - 8hrs</p>
+        </div>
+      </div>
+      <div class="study-card card">
+        <img class="study-icon" src="./images/icon-study.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Study</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="study-hours">7hrs</p>
+          <p class="last-time" id="study-last-time">Last week - 4hrs</p>
+        </div>
+      </div>
+      <div class="exercise-card card">
+        <img class="exercise-icon" src="./images/icon-exercise.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Exercise</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="exercise-hours">4hrs</p>
+          <p class="last-time" id="exercise-last-time">Last week - 5hrs</p>
+        </div>
+      </div>
+      <div class="social-card card">
+        <img class="social-icon" src="./images/icon-social.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Social</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="social-hours">5hrs</p>
+          <p class="last-time" id="social-last-time">Last week - 10hrs</p>
+        </div>
+      </div>
+      <div class="self-care-card card">
+        <img class="self-care-icon" src="./images/icon-self-care.svg" alt="" />
+        <div class="info">
+          <div class="title-wrapper">
+            <p class="categorie">Self care</p>
+            <img class="dots" src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <p class="hours" id="self-care-hours">2hrs</p>
+          <p class="last-time" id=" self-care-last-time">Last week - 2hrs</p>
+        </div>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
