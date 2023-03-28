@@ -155,7 +155,7 @@ body {
   font-size: 12px;
   font-weight: 300;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr;
